@@ -11,7 +11,7 @@
   const save = () => { try { localStorage.setItem("bio-progress", JSON.stringify(P)); } catch (e) {} };
   const key = (t, i) => t.id + "#" + i;
 
-  let view = "home", topicSel = "all";
+  let view = "home", topicSel = "all", examTimer;
 
   const items = (kind, sel) => T.filter(t => sel === "all" || t.id === sel)
     .flatMap(t => (t[kind] || []).map((x, i) => ({ ...x, t, k: key(t, i) })));
@@ -21,7 +21,7 @@
   const bindSelect = rerender => { $("#ts").onchange = e => { topicSel = e.target.value; rerender(); }; };
 
   function go(v) {
-    view = v;
+    view = v; clearInterval(examTimer);
     document.querySelectorAll("#nav button").forEach(b => b.classList.toggle("on", b.dataset.v === v));
     ({ home, summary, cards, quiz, exam })[v]();
   }
@@ -43,7 +43,11 @@
     }).join("")}</div>
     <button id="reset" class="mut">Fortschritt zurücksetzen</button>`;
     app.querySelectorAll("button[data-t]").forEach(b => b.onclick = () => { topicSel = b.dataset.t; go(b.dataset.v); });
-    $("#reset").onclick = () => { if (confirm("Fortschritt wirklich löschen?")) { P = { cards: {}, quiz: {} }; save(); home(); } };
+    $("#reset").onclick = () => {
+      $("#reset").outerHTML = `<span class="row">Wirklich alles löschen? <button id="yes0" class="pri">Ja, löschen</button><button id="no0">Abbrechen</button></span>`;
+      $("#yes0").onclick = () => { P = { cards: {}, quiz: {} }; save(); home(); };
+      $("#no0").onclick = home;
+    };
   }
 
   // ---------- Zusammenfassung ----------
@@ -88,9 +92,9 @@
 
   // ---------- Quiz & Prüfung ----------
   function runQuiz(list, { exam = false, minutes = 0 } = {}) {
-    let i = 0, score = 0, done = false, wrongs = [], timer;
+    let i = 0, score = 0, done = false, wrongs = [];
     const end = () => {
-      clearInterval(timer);
+      clearInterval(examTimer);
       app.innerHTML = `<div class="card"><div class="big">${score}/${list.length}</div>
         <p>${Math.round(100 * score / list.length)}% richtig</p>
         ${wrongs.length ? `<h3>Zum Wiederholen</h3><ul>${wrongs.map(w => `<li>${esc(w.q)} → <b>${esc(w.o[w.a])}</b></li>`).join("")}</ul>` : "<p>Fehlerfrei! 🎉</p>"}
@@ -116,7 +120,7 @@
     };
     if (minutes) {
       let left = minutes * 60;
-      timer = setInterval(() => {
+      examTimer = setInterval(() => {
         left--; const el = $("#tm"); if (el) el.textContent = `⏱ ${Math.floor(left / 60)}:${String(left % 60).padStart(2, "0")}`;
         if (left <= 0) end();
       }, 1000);
