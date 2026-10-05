@@ -52,6 +52,11 @@ window.TOPICS = [
         "9 Axonendigungen: Verzweigung zur Kontaktaufnahme mit der Zielzelle.",
         "10 Motorische Endplatte (neuromuskuläre Synapse): Übertragung auf die Muskelfaser.",
         "Hinweis: Die Zuordnung von 5/6 und 8/9/10 ist aus der Abbildung abgeleitet. Vergleiche mit deiner Lösung aus dem Unterricht."
+      ]},
+      { h: "Starteraufgabe: Zuordnung a–g (Modellzeichnung)", p: [
+        "a Dendriten, b Zellkern, c Axonhügel, d Gliazelle (Myelinhülle), e Axon, f Schnürring, g Endknöpfchen.",
+        "Soma = Zellkörper, Neurit = Axon mit Hüllen, Endverzweigung = Axonende.",
+        "Hinweis: Zuordnung aus der Abbildung abgeleitet, besonders d/e. Mit der Unterrichtslösung abgleichen."
       ]}
     ],
     cards: [
@@ -69,7 +74,11 @@ window.TOPICS = [
       { q: "Ranvier’sche Schnürringe", a: "Stellen zwischen zwei Schwann-Zellen, an denen das Axon freiliegt." },
       { q: "Was ist ein Nerv?", a: "Ein Bündel aus Axonen in einer Bindegewebshülle. Die Zellkörper liegen häufig im Rückenmark." },
       { q: "Warum haben Neurone oft sehr viele Dendriten?", a: "Große Oberfläche für Tausende Synapsen anderer Neurone, so können viele Signale gleichzeitig aufgenommen und am Axonhügel verrechnet werden." },
-      { q: "Basiskonzept „Struktur und Funktion“ (engl. form follows function)", a: "Der Bau eines Bauteils (z. B. verzweigte Dendriten) ist an seine Aufgabe angepasst." }
+      { q: "Basiskonzept „Struktur und Funktion“ (engl. form follows function)", a: "Der Bau eines Bauteils (z. B. verzweigte Dendriten) ist an seine Aufgabe angepasst." },
+      { q: "Starteraufgabe: Welche Beschreibung gehört zu „Schnürring“?", a: "Nicht isolierter Teil des Axons, dient der Erregungsweiterleitung." },
+      { q: "Starteraufgabe: Welche Beschreibung gehört zu „Endknöpfchen“?", a: "Teil der Synapse, Verbindung zur nächsten Nervenzelle oder zum Muskel." },
+      { q: "Starteraufgabe: Welche Beschreibung gehört zu „Axon“?", a: "Langer (bis zu 1 m), dünner Zellfortsatz, leitet die Erregung weiter." },
+      { q: "Starteraufgabe: Welche Beschreibung gehört zu „Axonhügel“?", a: "Hier entsteht die zelleigene Erregung." }
     ],
     quiz: [
       { q: "Wo werden die ankommenden Signale eines Neurons verrechnet?", o: ["Am Axonende","Am Axonhügel","Am Ranvier’schen Schnürring","In der Myelinscheide"], a: 1, e: "Der Axonhügel ist der Sammelpunkt. Wird dort der Schwellenwert erreicht, wird die Erregung über das Axon weitergeleitet." },
@@ -84,6 +93,65 @@ window.TOPICS = [
       { q: "Wie lang kann ein Axon beim Menschen maximal werden?", o: ["ca. 1 mm","ca. 10 cm","bis ca. 1 m","über 10 m"], a: 2, e: "Motorische Neurone der Beinmuskulatur können bis zu einem Meter lang sein." },
       { q: "Schwann’sche Zellen kommen vor bei …", o: ["allen Tieren","nur Wirbeltieren","nur Säugetieren","nur Pflanzen"], a: 1, e: "Dieser Gliazelltyp existiert nur bei Wirbeltieren." },
       { q: "Wo findet im Neuron hauptsächlich Stoffwechsel und Proteinbiosynthese statt?", o: ["Im Axon","Im Zellkörper (Soma)","In der Myelinscheide","Im Endknöpfchen"], a: 1, e: "Das Soma enthält Zellkern und Organellen." }
+    ]
+  },
+  {
+    id: "ruhepotential",
+    title: "Neurobiologie 2: Ruhepotential – Messungen & Ionen",
+    summary: [
+      { h: "Galvani (18. Jh.) – Aufgabe 1", p: [
+        "Versuche an Froschmuskeln mit noch vorhandenen Nervenfasern: Der Muskel kontrahiert, wenn unterschiedliche Ladungen Nerv und Muskel berühren.",
+        "Erkenntnis: Elektrische Reize lösen über den Nerv eine Muskelkontraktion aus. Nerven stehen also mit elektrischen Vorgängen in Verbindung (Galvani sprach von „tierischer Elektrizität“).",
+        "Nerv und Muskel sind funktionell verbunden: Der Nerv leitet die Erregung zum Muskel."
+      ]},
+      { h: "Messung am Riesenaxon (Abb. 1 und 2) – Aufgabe 2", p: [
+        "Aufbau: Glasmikroelektrode (Spitze < 1 µm, Silberelektrode in KCl-Lösung), Bezugselektrode, Oszilloskop, Axon in isotonischer Salzlösung.",
+        "Abb. 1: Beide Elektroden außen auf der Zelle: 0 mV. Es gibt keinen Spannungsunterschied zwischen zwei Punkten außerhalb der Zelle.",
+        "Abb. 2: Eine Elektrode im Zellinneren, eine außen: −70 mV. Zwischen Innen- und Außenseite der Membran besteht eine Spannung, das Innere ist gegenüber außen negativ.",
+        "Dieser Wert der ruhenden Nervenzelle heißt Ruhepotential (Ruhemembranpotential).",
+        "Folgerung: Die Ladungsverteilung an der Membran ist ungleich. Die Spannung liegt an der Membran, nicht im Außenmedium."
+      ]},
+      { h: "Ionenkonzentrationen (mmol/l) – Aufgabe 3", p: [
+        "Na⁺: innen 50, außen 440 (außen viel höher).",
+        "K⁺: innen 400, außen 20 (innen viel höher).",
+        "Cl⁻: innen 108, außen 560 (außen viel höher).",
+        "A⁻ (organische Proteinanionen): innen 460, außen 0 (nur innen).",
+        "Vergleich: Na⁺ und Cl⁻ sind außen angereichert, K⁺ und die großen Anionen A⁻ innen.",
+        "Skizze: Neuron zeichnen, innen und außen die vier Ionen mit Werten eintragen (z. B. Pfeile: Na⁺ außen groß, K⁺ innen groß)."
+      ]},
+      { h: "Vermutungen zum Potentialaufbau – Aufgabe 4", p: [
+        "Die Membran ist selektiv durchlässig (semipermeabel): Für K⁺ gut durchlässig, für die großen Proteinanionen A⁻ undurchlässig.",
+        "K⁺ diffundiert dem Konzentrationsgefälle folgend von innen nach außen. Die negativen A⁻ bleiben zurück, das Innere wird negativ.",
+        "Der entstehende elektrische Gradient zieht K⁺ wieder nach innen, bis sich ein Gleichgewicht einstellt: Ruhepotential.",
+        "Na⁺ strömt nur wenig ein. Ionenpumpen könnten die Konzentrationsunterschiede dauerhaft aufrechterhalten (Vermutung, Vorgriff auf Unterricht).",
+        "Hinweis: Das sind Vermutungen im Sinn der Aufgabenstellung. Vergleiche mit dem Unterrichtsergebnis."
+      ]}
+    ],
+    cards: [
+      { q: "Was beobachtete Galvani?", a: "Ein Froschmuskel mit Nervenfasern kontrahiert, wenn unterschiedliche Ladungen Nerv und Muskel berühren." },
+      { q: "Welche Erkenntnis ergibt sich aus Galvanis Versuch?", a: "Elektrische Reize lösen über den Nerv eine Muskelkontraktion aus, Nerven hängen mit elektrischen Vorgängen zusammen („tierische Elektrizität“)." },
+      { q: "Abb. 1: beide Elektroden außen. Messwert und Deutung?", a: "0 mV. Außen gibt es keinen Spannungsunterschied." },
+      { q: "Abb. 2: eine Elektrode innen, eine außen. Messwert und Deutung?", a: "−70 mV. An der Membran besteht eine Spannung, innen ist negativ gegenüber außen (Ruhepotential)." },
+      { q: "Ruhepotential", a: "Spannung zwischen Innen- und Außenseite der Membran einer nicht erregten Nervenzelle (hier ca. −70 mV)." },
+      { q: "Na⁺-Konzentration innen / außen (mmol/l)?", a: "Innen 50, außen 440." },
+      { q: "K⁺-Konzentration innen / außen (mmol/l)?", a: "Innen 400, außen 20." },
+      { q: "Cl⁻-Konzentration innen / außen (mmol/l)?", a: "Innen 108, außen 560." },
+      { q: "Proteinanionen (A⁻) innen / außen (mmol/l)?", a: "Innen 460, außen 0." },
+      { q: "Welche Ionen sind außen angereichert, welche innen?", a: "Außen: Na⁺ und Cl⁻. Innen: K⁺ und A⁻." },
+      { q: "Wie könnte das Ruhepotential entstehen?", a: "Membran selektiv durchlässig: K⁺ diffundiert nach außen, negative A⁻ können nicht folgen, das Innere wird negativ." },
+      { q: "Warum kann A⁻ nicht aus der Zelle diffundieren?", a: "Es sind große organische Proteinanionen, die die Membran nicht passieren." }
+    ],
+    quiz: [
+      { q: "Wie hoch ist die gemessene Spannung, wenn beide Elektroden außen auf der Nervenzelle liegen?", o: ["−70 mV","+70 mV","0 mV","−140 mV"], a: 2, e: "Zwischen zwei Punkten außerhalb der Zelle besteht kein Spannungsunterschied." },
+      { q: "Wie hoch ist die Spannung bei einer Elektrode innen und einer außen?", o: ["0 mV","−70 mV","+70 mV","+440 mV"], a: 1, e: "Das ist das Ruhepotential: innen negativ gegenüber außen." },
+      { q: "Welche Ionen sind in der Nervenzelle in höherer Konzentration als außen?", o: ["Na⁺ und Cl⁻","K⁺ und A⁻","Nur Na⁺","Nur Cl⁻"], a: 1, e: "K⁺ (400 vs. 20) und A⁻ (460 vs. 0) sind innen angereichert." },
+      { q: "Welche Ionen sind außerhalb der Zelle angereichert?", o: ["K⁺ und A⁻","Na⁺ und Cl⁻","Nur K⁺","Nur A⁻"], a: 1, e: "Na⁺ (440 vs. 50) und Cl⁻ (560 vs. 108)." },
+      { q: "Welche Ionensorte kommt nur innerhalb der Zelle vor?", o: ["Na⁺","K⁺","Cl⁻","Organische Proteinanionen (A⁻)"], a: 3, e: "A⁻ innen 460 mmol/l, außen 0." },
+      { q: "Was erkannte Galvani aus seinem Froschschenkel-Versuch?", o: ["Muskeln leiten keinen Strom","Elektrische Reize über den Nerv lösen eine Muskelkontraktion aus","Frösche erzeugen Licht","Nerven bestehen aus Metall"], a: 1, e: "Unterschiedliche Ladungen an Nerv und Muskel führten zur Kontraktion." },
+      { q: "Warum wird das Zellinnere beim Ruhepotential negativ?", o: ["K⁺ diffundiert nach außen, A⁻ bleiben zurück","Na⁺ strömt massenhaft ein","Cl⁻ wird aktiv eingepumpt","Die Membran ist völlig undurchlässig"], a: 0, e: "Die K⁺-Ionen folgen dem Konzentrationsgefälle nach außen, die großen Anionen können die Membran nicht passieren." },
+      { q: "Was ist ein Ruhepotential?", o: ["Spannung an der Membran einer nicht erregten Nervenzelle","Spannung zwischen zwei Elektroden außen","Die Erregung beim Muskel","Der Schwellenwert am Axonhügel"], a: 0, e: "Es beschreibt den Ruhezustand der Nervenzelle (hier ca. −70 mV)." },
+      { q: "Wozu dient die Bezugselektrode im Versuch?", o: ["Sie stimuliert das Axon","Sie liefert den Vergleichspunkt außerhalb der Zelle für die Spannungsmessung","Sie färbt die Zelle","Sie kühlt das Axon"], a: 1, e: "Gemessen wird die Spannung zwischen Glasmikroelektrode und Bezugselektrode." },
+      { q: "Wie groß ist die Spitze der Glasmikroelektrode?", o: ["Ø < 1 µm","Ø ca. 1 mm","Ø ca. 1 cm","Ø ca. 1 m"], a: 0, e: "Sehr dünn, damit sie die Zelle (Riesenaxon) kaum schädigt." }
     ]
   }
 ];
