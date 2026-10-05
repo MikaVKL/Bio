@@ -303,5 +303,166 @@ window.TOPICS = [
       { q: "Wie dick ist ein Kalmar-Riesenaxon etwa?", o: ["1 µm","ca. 1 mm","1 cm","10 cm"], a: 1, e: "100- bis 1000-mal dicker als Säugeraxone." },
       { q: "Was ändert sich mit jedem Kation, das im Modell die Kammer wechselt?", o: ["Beide Potenziale steigen","Chemisches Potenzial sinkt, elektrisches steigt","Beide sinken","Nichts"], a: 1, e: "Konzentrationsunterschied schrumpft, Ladungsunterschied wächst." }
     ]
+  },
+  {
+    id: "aktionspotential",
+    title: "Neurobiologie 5: Ablauf des Aktionspotentials",
+    summary: [
+      { h: "Versuchsaufbau und Grafik (Aufgabe 1, Lösungsblatt a–j)", p: [
+        "Eine tierische Nervenzelle wird gereizt, die Membranspannung am Axon wird mit zwei Elektroden registriert.",
+        "a Neuron, b Messgerät/Verstärker, c Darstellung auf dem Oszilloskop.",
+        "d Axonaußenseite, e Axoninnenseite, f links Ruhepotential (RP), rechts Aktionspotential (AP) – Ladungsverteilung an der Membran.",
+        "g Membranpotential in mV (y-Achse), h Zeit in ms (x-Achse).",
+        "i Ruhepotential (ca. −70 mV), j Schwelle (ca. −50 mV)."
+      ]},
+      { h: "Die Phasen A–E (Aufgabe 2, k–o)", p: [
+        "A (k) Ruhepotential: Geöffnete „normale“ K⁺-Kanäle erzeugen das Ruhepotential, K⁺ folgt dem Konzentrationsgradienten nach außen. Spannungsabhängige Kanäle sind zu.",
+        "B (l) Depolarisation bis zur Schwelle: Der Reiz verändert die Spannung und öffnet einige Na⁺-Kanäle. Na⁺ strömt entlang des Konzentrations- und Ladungsgradienten ein.",
+        "C (m) Aufstrich und Overshoot: Weitere spannungsabhängige Na⁺-Kanäle öffnen (positive Rückkopplung), schneller Aufstrich zum Spitzenpotential, Na⁺ diffundiert weiter nach innen (Umpolung, Overshoot > 0 mV).",
+        "D (n) Repolarisation: Die Na⁺-Kanäle werden durch die Spannungsänderung geschlossen (inaktiviert), zeitverzögert öffnen spannungsabhängige K⁺-Kanäle, K⁺ strömt nach außen. Evtl. Hyperpolarisation (Nachpotential unter −70 mV).",
+        "E (o) Rückkehr zum Ruhepotential: Alle spannungsabhängigen Kanäle sind wieder geschlossen.",
+        "Wiederherstellung der Ionenverteilung danach durch die Na⁺/K⁺-Pumpe (nur wenige Ionen haben die Seiten gewechselt)."
+      ]},
+      { h: "Refraktärphase (Aufgabe 3)", p: [
+        "Laufen die Phasen A–E ab, können neu ankommende Reize nicht beantwortet werden: Die spannungsabhängigen Kanäle sind verändert und können nicht erneut geöffnet werden.",
+        "Absolute Refraktärphase: gar keine neue Erregung möglich (Na⁺-Kanäle inaktiviert).",
+        "Relative Refraktärphase: nur mit stärkerem Reiz auslösbar (Hyperpolarisation, K⁺-Kanäle noch offen).",
+        "Bedeutung: Das AP läuft nur in eine Richtung (Rückwärtslauf ausgeschlossen), und die Frequenz der APs ist begrenzt."
+      ]},
+      { h: "Alles-oder-Nichts und Schwelle", p: [
+        "Erst wenn die Depolarisation die Schwelle erreicht, kommt es zum AP. Ein AP hat immer dieselbe Amplitude („Alles-oder-Nichts-Gesetz“). Die Reizstärke steckt in der Frequenz.",
+        "Aufgabe 4: Am Axonhügel ist die Dichte spannungsabhängiger Na⁺-Kanäle am höchsten. Dort ist die Schwelle zum Auslösen eines APs am geringsten, das AP entsteht dort zuerst."
+      ]},
+      { h: "Basiskonzept Kompartimentierung", p: [
+        "Der Aufbau der Ionengradienten an der Membran der Nervenzelle lässt sich dem Basiskonzept Kompartimentierung zuordnen (Membran trennt Reaktions- bzw. Ionenräume).",
+        "Hinweis: Die Hinweise wie „Lösungen k–o“ stammen vom Lösungsblatt zu Arbeitsblatt S. 15 (Foto). Das Lösungsblatt enthält nur Stichworte."
+      ]}
+    ],
+    cards: [
+      { q: "Ruhepotential und Schwellenwert (Zahlen)?", a: "Ruhepotential ca. −70 mV, Schwelle ca. −50 mV." },
+      { q: "Phase A: Ruhepotential – was geschieht?", a: "Offene K⁺-Kanäle: K⁺ strömt nach außen, spannungsabhängige Na⁺-/K⁺-Kanäle sind geschlossen." },
+      { q: "Phase B: Depolarisation bis zur Schwelle", a: "Reiz öffnet einige Na⁺-Kanäle, Na⁺ strömt ein (Konzentrations- und Ladungsgradient)." },
+      { q: "Phase C: Aufstrich / Overshoot", a: "Weitere spannungsabhängige Na⁺-Kanäle öffnen, schneller Na⁺-Einstrom bis zum Spitzenpotential (positiv)." },
+      { q: "Phase D: Repolarisation", a: "Na⁺-Kanäle schließen/inaktivieren, zeitverzögert öffnen spannungsabhängige K⁺-Kanäle, K⁺ strömt aus. Evtl. Hyperpolarisation." },
+      { q: "Phase E: Rückkehr zum Ruhepotential", a: "Alle spannungsabhängigen Kanäle sind geschlossen, Ruhepotential stellt sich wieder ein." },
+      { q: "Depolarisation", a: "Das Membranpotential wird weniger negativ (Na⁺-Einstrom)." },
+      { q: "Repolarisation", a: "Rückkehr zum negativen Ruhepotential durch K⁺-Ausstrom." },
+      { q: "Hyperpolarisation", a: "Das Membranpotential wird kurzzeitig negativer als das Ruhepotential (K⁺-Kanäle noch offen)." },
+      { q: "Overshoot", a: "Positive Spitze über 0 mV, weil weiter Na⁺ einströmt (Umpolung der Membran)." },
+      { q: "Warum können in den Phasen A–E keine neuen Reize beantwortet werden?", a: "Spannungsabhängige Kanäle sind verändert (Na⁺-Kanäle inaktiviert) und können nicht erneut öffnen: Refraktärphase." },
+      { q: "Absolute vs. relative Refraktärphase", a: "Absolut: gar keine Erregung möglich. Relativ: nur mit stärkerem Reiz auslösbar." },
+      { q: "Warum ist am Axonhügel die Schwelle am geringsten?", a: "Dort ist die Dichte spannungsabhängiger Na⁺-Kanäle am höchsten." },
+      { q: "Alles-oder-Nichts-Gesetz", a: "Ein AP wird entweder ganz (immer gleiche Amplitude) oder gar nicht ausgelöst. Reizstärke wird über die Frequenz codiert." },
+      { q: "Welches Basiskonzept passt zu den Ionengradienten an der Membran?", a: "Kompartimentierung." }
+    ],
+    quiz: [
+      { q: "Welches Ion strömt in Phase B/C ein?", o: ["K⁺","Na⁺","Cl⁻","A⁻"], a: 1, e: "Spannungsabhängige Na⁺-Kanäle öffnen, Na⁺ strömt ein." },
+      { q: "Was geschieht in der Repolarisationsphase (D)?", o: ["Na⁺-Kanäle öffnen weiter","Na⁺-Kanäle schließen, K⁺-Kanäle öffnen, K⁺ strömt aus","Cl⁻ strömt aus","Die Pumpe stoppt"], a: 1, e: "Na⁺-Kanäle inaktiviert, zeitverzögert öffnen spannungsabhängige K⁺-Kanäle." },
+      { q: "Was löst die Öffnung der weiteren spannungsabhängigen Na⁺-Kanäle aus?", o: ["Das Erreichen der Schwelle (Spannungsänderung)","Ein Ligand","ATP","Sinkende K⁺-Konzentration"], a: 0, e: "Ab der Schwelle öffnen sich viele Na⁺-Kanäle (positive Rückkopplung)." },
+      { q: "Wie heißt der Zustand kurz nach dem AP, in dem die Spannung unter −70 mV liegt?", o: ["Overshoot","Hyperpolarisation","Depolarisation","Schwelle"], a: 1, e: "K⁺-Kanäle sind noch offen, das Potential ist kurzzeitig negativer als im Ruhezustand." },
+      { q: "Warum läuft das AP nur in eine Richtung?", o: ["Weil das Axon nur eine Richtung hat","Wegen der Refraktärphase hinter dem AP","Wegen der Myelinscheide allein","Wegen der Pumpe"], a: 1, e: "Hinter dem AP sind die Na⁺-Kanäle inaktiviert, ein Rückwärtslauf ist ausgeschlossen." },
+      { q: "Wo ist die Schwelle zum Auslösen eines APs am niedrigsten?", o: ["Am Axonende","Am Axonhügel","An den Dendriten","Im Zellkern"], a: 1, e: "Höchste Dichte spannungssensitiver Na⁺-Kanäle am Axonhügel." },
+      { q: "Was besagt das Alles-oder-Nichts-Gesetz?", o: ["Die Amplitude des APs hängt linear von der Reizstärke ab","Ein AP hat immer dieselbe Amplitude oder entsteht gar nicht","APs sind immer negativ","Reize unter −70 mV lösen ein AP aus"], a: 1, e: "Die Reizstärke wird über die Frequenz der APs codiert." },
+      { q: "Wie hoch ist ungefähr die Schwelle?", o: ["−90 mV","−70 mV","−50 mV","+30 mV"], a: 2, e: "Ruhepotential −70 mV, Schwelle ca. −50 mV." },
+      { q: "Was erzeugt das Ruhepotential laut Lösungsblatt?", o: ["Geöffnete „normale“ K⁺-Kanäle","Offene Na⁺-Kanäle","Ca²⁺-Einstrom","Das Oszilloskop"], a: 0, e: "K⁺ folgt dem Konzentrationsgradienten nach außen." },
+      { q: "Welches Basiskonzept passt zum Aufbau von Ionengradienten an der Membran?", o: ["Energieumwandlung","Kompartimentierung","Steuerung und Regelung","Variation"], a: 1, e: "Die Membran trennt Räume mit unterschiedlicher Ionenzusammensetzung." },
+      { q: "Was zeigt die x-Achse im Oszilloskopbild?", o: ["Membranpotential in mV","Zeit in ms","Ionenkonzentration","Stromstärke"], a: 1, e: "y-Achse: Membranpotential (mV), x-Achse: Zeit (ms)." }
+    ]
+  },
+  {
+    id: "saltatorisch",
+    title: "Neurobiologie 6: Saltatorische Erregungsleitung",
+    summary: [
+      { h: "Aufbau einer markhaltigen Faser", p: [
+        "Das Axon ist abschnittsweise von Myelinscheiden (Schwann-Zellen) isoliert, dazwischen liegen die Ranvier’schen Schnürringe (ca. 2 µm lang, Internodien ca. 2000 µm).",
+        "Nur an den Schnürringen liegen Axonmembran und spannungsabhängige Na⁺-Kanäle frei, dort kann ein AP entstehen."
+      ]},
+      { h: "Aufgabe 1: Räumlich-zeitlicher Verlauf (Abb. 1) – Vorschlag", p: [
+        "Die Leitungszeit für ein AP steigt in kleinen Stufen an: An den Schnürringen (Na⁺-Ioneneinstrom) steigt die Zeit steil, entlang der Myelinscheide (2000 µm) nur flach.",
+        "Deutung: Im Bereich der Myelinscheide wird die Erregung schnell passiv (elektrisch, Ladungsverschiebung im Axoninneren) weitergeleitet, an den Schnürringen wird das AP neu aufgebaut (kostet Zeit).",
+        "Die Erregung „springt“ von Schnürring zu Schnürring: saltatorische Erregungsleitung (lat. saltare = springen)."
+      ]},
+      { h: "Aufgabe 2: Ionenbewegungen (Abb. 2) – Vorschlag", p: [
+        "① Am Schnürring A öffnen spannungsabhängige Na⁺-Kanäle, Na⁺ strömt ein (Depolarisation). Ladungsausgleich im Axon zum nächsten Schnürring B.",
+        "② Bei B wird die Schwelle erreicht, Na⁺-Kanäle öffnen. In A öffnen K⁺-Kanäle, K⁺ strömt aus (Repolarisation).",
+        "③ In C beginnt Na⁺-Einstrom, in B strömt K⁺ aus, A ist refraktär: Die Erregung läuft nur vorwärts.",
+        "Konzentrationen: Innen sinkt kurz K⁺ und steigt Na⁺. Die Veränderung ist nur minimal. Die Na⁺/K⁺-Pumpe stellt die Ausgangskonzentrationen wieder her."
+      ]},
+      { h: "Aufgabe 3: Modell (Dominoeffekt, Abb. 3) – Vorschlag", p: [
+        "Verdeutlicht: Eine Auslenkung löst die nächste aus (Weiterleitung als Kettenreaktion), Energie steckt in jedem Element (Dominostein = Schnürring), die Brücke steht für die isolierte Strecke.",
+        "Modellkritik: Dominosteine fallen nur einmal und müssen von Hand wieder aufgestellt werden, das Neuron regeneriert selbstständig (Pumpe, Kanäle). Modell zeigt keine Ionen, Kanäle, Schwelle oder elektrische Ladung. Kein Alles-oder-Nichts-Verhalten bei unterschiedlicher Stoßstärke."
+      ]},
+      { h: "Aufgabe 4: Was erhöht die Geschwindigkeit der saltatorischen Leitung? – Vorschlag", p: [
+        "Myelinscheide: elektrische Isolation, Ladung geht nicht über die Membran verloren.",
+        "Sprünge zwischen Schnürringen statt kontinuierlicher Erregung der ganzen Membran: weniger Orte, an denen Kanäle öffnen müssen.",
+        "Größerer Axondurchmesser: geringerer Längswiderstand im Axon.",
+        "Zusätzlich: Energiesparen, weil weniger Ionen die Membran passieren und weniger Pumparbeit nötig ist.",
+        "Marklose Axone: kontinuierliche Erregungsleitung, deutlich langsamer.",
+        "Hinweis: Dieses Blatt hat kein Lösungsblatt. Die Antworten sind mein Vorschlag. Vergleiche sie mit dem Unterrichtsergebnis."
+      ]}
+    ],
+    cards: [
+      { q: "Saltatorische Erregungsleitung", a: "Sprunghafte Erregungsleitung in markhaltigen Axonen: Das AP entsteht nur an den Ranvier’schen Schnürringen." },
+      { q: "Warum „saltatorisch“?", a: "Lateinisch saltare = springen. Die Erregung springt von Schnürring zu Schnürring." },
+      { q: "Wo liegen die spannungsabhängigen Na⁺-Kanäle bei markhaltigen Axonen?", a: "Vor allem an den Ranvier’schen Schnürringen (nicht isolierte Stellen)." },
+      { q: "Was passiert zwischen zwei Schnürringen?", a: "Passive, schnelle elektrische Weiterleitung (Ladungsverschiebung im Axoninneren) durch die isolierte Strecke." },
+      { q: "Funktion der Myelinscheide für die Leitgeschwindigkeit?", a: "Isoliert elektrisch, verhindert Ladungsverlust und erhöht die Geschwindigkeit." },
+      { q: "Welche Faktoren erhöhen die Geschwindigkeit der Erregungsleitung?", a: "Myelinisierung (Sprünge), größerer Axondurchmesser (geringerer Längswiderstand)." },
+      { q: "Erregungsleitung in marklosen Axonen?", a: "Kontinuierlich entlang der ganzen Membran, deutlich langsamer." },
+      { q: "Warum läuft die Erregung nur in eine Richtung weiter?", a: "Hinter dem AP ist der Schnürring refraktär (Na⁺-Kanäle inaktiviert)." },
+      { q: "Wie lang sind Schnürring und Internodium (Abb. 1)?", a: "Schnürring ca. 2 µm, Myelinabschnitt ca. 2000 µm." },
+      { q: "Wo steigt die Leitungszeit im Diagramm steil an?", a: "An den Schnürringen (Na⁺-Einstrom, AP wird neu aufgebaut)." },
+      { q: "Warum spart die saltatorische Leitung Energie?", a: "Nur an den Schnürringen strömen Ionen, also muss die Na⁺/K⁺-Pumpe weniger arbeiten." },
+      { q: "Modell Dominosteine: Kritik?", a: "Fällt nur einmal, keine Regeneration, keine Ionen/Kanäle/Schwelle, kein Alles-oder-Nichts." }
+    ],
+    quiz: [
+      { q: "Wo wird bei der saltatorischen Erregungsleitung das AP neu gebildet?", o: ["Entlang der gesamten Myelinscheide","An den Ranvier’schen Schnürringen","Nur am Axonhügel","Nur an den Endknöpfchen"], a: 1, e: "Nur dort sind spannungsabhängige Kanäle zugänglich." },
+      { q: "Was bedeutet „saltatorisch“?", o: ["Kontinuierlich","Springend","Rückwärts","Chemisch"], a: 1, e: "Von lat. saltare = springen." },
+      { q: "Welche Aussage zur Myelinscheide ist richtig?", o: ["Sie erzeugt das AP","Sie isoliert und erhöht die Geschwindigkeit","Sie bremst die Leitung","Sie enthält die meisten Na⁺-Kanäle"], a: 1, e: "Isolation verhindert Ladungsverlust." },
+      { q: "In welchen Axonen ist die Erregungsleitung kontinuierlich?", o: ["Markhaltigen","Marklosen","Beiden","Keinen"], a: 1, e: "Marklose Axone leiten entlang der ganzen Membran, langsamer." },
+      { q: "Wie wirkt sich ein größerer Axondurchmesser aus?", o: ["Schneller (geringerer Längswiderstand)","Langsamer","Gar nicht","Nur in Gliazellen"], a: 0, e: "Ein größerer Querschnitt senkt den Widerstand im Axon." },
+      { q: "Warum geht die Erregung nicht rückwärts?", o: ["Refraktärphase","Zu wenig ATP","Kein Myelin","Schwelle zu hoch"], a: 0, e: "Hinter dem AP sind Na⁺-Kanäle inaktiviert." },
+      { q: "Was zeigt der Anstieg der Leitungszeit an den Schnürringen in Abb. 1?", o: ["Das AP wird dort neu aufgebaut und das kostet Zeit","Das Axon ist dort dicker","Dort ist die Myelinscheide","Dort fließt kein Strom"], a: 0, e: "Zwischen den Schnürringen läuft die Weiterleitung schnell." },
+      { q: "Warum spart saltatorische Leitung Energie?", o: ["Es strömen weniger Ionen über die Membran","Es wird kein ATP gebraucht","Die Axone sind dünner","Es gibt keine Pumpen"], a: 0, e: "Nur an den Schnürringen wechseln Ionen die Seite." },
+      { q: "Was ist ein Kritikpunkt am Domino-Modell?", o: ["Es zeigt zu viele Ionen","Die Steine regenerieren sich nicht selbst wie das Neuron","Es ist zu schnell","Es zeigt Myelin zu genau"], a: 1, e: "Das Neuron stellt seinen Ausgangszustand wieder her." }
+    ]
+  },
+  {
+    id: "na-k-pumpe",
+    title: "Neurobiologie 7: Natrium-Kalium-Pumpe",
+    summary: [
+      { h: "Aufgabe: Art und Funktion der Pumpe (Abb.)", p: [
+        "Art: Ionenpumpe, ein Transmembranprotein (Carrier), das aktiven Transport betreibt: Na⁺/K⁺-ATPase.",
+        "Funktion: Transportiert unter Spaltung von ATP (ATP → ADP + P) Na⁺-Ionen aus der Zelle (innen → außen) und K⁺-Ionen in die Zelle (außen → innen).",
+        "Der Transport geht gegen den Konzentrationsgradienten (Na⁺ ist außen höher, K⁺ innen höher), deshalb braucht er Energie.",
+        "Bilanz: 3 Na⁺ nach außen, 2 K⁺ nach innen pro ATP.",
+        "Bedeutung: Erhält die Ionenungleichverteilung und damit das Ruhepotential; stellt sie nach einem Aktionspotential wieder her."
+      ]},
+      { h: "Ablauf (für die Pantomime-Zusatzaufgabe)", p: [
+        "1. Drei Na⁺ binden von innen an die Pumpe.",
+        "2. ATP bindet und wird gespalten (ADP + P), die Pumpe ändert ihre Form (Konformationsänderung).",
+        "3. Na⁺ werden nach außen abgegeben.",
+        "4. Zwei K⁺ binden von außen, werden durch weitere Formänderung nach innen transportiert und dort freigegeben.",
+        "5. Pumpe kehrt in den Ausgangszustand zurück, der Zyklus beginnt neu.",
+        "Hinweis: 3:2 steht im Arbeitsblatt „Ruhepotenzial lesen und malen“. Das Bild zeigt es nur schematisch."
+      ]}
+    ],
+    cards: [
+      { q: "Art der Natrium-Kalium-Pumpe", a: "Ionenpumpe (Transportprotein) für aktiven Transport: Na⁺/K⁺-ATPase." },
+      { q: "Welche Ionen transportiert die Pumpe in welche Richtung?", a: "Na⁺ innen → außen, K⁺ außen → innen." },
+      { q: "Bilanz pro ATP?", a: "3 Na⁺ nach außen, 2 K⁺ nach innen." },
+      { q: "Warum braucht die Pumpe Energie?", a: "Sie transportiert gegen den Konzentrationsgradienten (aktiver Transport)." },
+      { q: "Was geschieht mit ATP?", a: "Es wird zu ADP + Phosphat gespalten, die Energie dient dem Transport." },
+      { q: "Welche Aufgabe hat die Pumpe für die Nervenzelle?", a: "Aufrechterhaltung der Ionenungleichverteilung (Ruhepotential) und Wiederherstellung nach dem AP." },
+      { q: "Wie viel Gehirn-ATP verbraucht die Pumpe?", a: "Etwa 50–70 %." },
+      { q: "Unterschied: Kanal vs. Pumpe", a: "Kanal: passiver Transport entlang des Gradienten. Pumpe: aktiver Transport gegen den Gradienten unter ATP-Verbrauch." }
+    ],
+    quiz: [
+      { q: "Welche Aussage zur Na⁺/K⁺-Pumpe ist richtig?", o: ["Sie transportiert passiv entlang des Gradienten","Sie transportiert aktiv unter ATP-Verbrauch","Sie ist ein Ionenkanal ohne Energiebedarf","Sie arbeitet nur während des APs"], a: 1, e: "Aktiver Transport gegen den Konzentrationsgradienten." },
+      { q: "In welche Richtung werden Na⁺-Ionen transportiert?", o: ["Von außen nach innen","Von innen nach außen","Gar nicht","In beide Richtungen"], a: 1, e: "Na⁺ wird aus der Zelle gepumpt." },
+      { q: "Wie viele K⁺ nimmt die Pumpe pro Zyklus auf?", o: ["1","2","3","4"], a: 1, e: "3 Na⁺ raus, 2 K⁺ rein." },
+      { q: "Warum heißt sie ATPase?", o: ["Sie baut ATP auf","Sie spaltet ATP zur Energiegewinnung","Sie transportiert ATP","Sie bildet Kanäle"], a: 1, e: "ATP wird zu ADP + P gespalten." },
+      { q: "Wozu dient die Pumpe nach einem Aktionspotential?", o: ["Zur Wiederherstellung der Ionenverteilung","Zur Öffnung der Na⁺-Kanäle","Zur Bildung der Myelinscheide","Zur Verstärkung des APs"], a: 0, e: "Sie stellt Na⁺/K⁺-Gradienten wieder her." }
+    ]
   }
 ];
